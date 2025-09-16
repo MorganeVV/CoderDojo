@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>make-a-burger</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make-A-Burger</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Make-A-Burger</h1>
+    <nav>
+      <li>Reeds gemaakte burgers</li>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>Onze heerlijke, handgemaakte burgers kunnen naar eigen smaak worden <strong>aangepast</strong>. Via onze
+        gloednieuwe en glanzende <strong>webinterface</strong> kun je nu je burgers bestellen vanuit je luie stoel!</p>
+      <p>Experimenteer gerust met verschillende <strong>toppings</strong> en <strong>smaken</strong>.</p>
+    </div>
+
+    <div class="burgerConfiguratie">
+      <form>
+        <fieldset class="cf first">
+          <div class="kolom burger">
+            <input type="text" name="naamBurger" id="naamBurger" placeholder="Geef het een naam!" />
+            <figure>
+              <img src="images/bovenste_broodje.svg" alt="Bovenste broodje" title="Bovenste broodje" />
+              <div class="toppings"></div>
+              <img src="images/onderste_broodje.svg" alt="Onderste broodje" title="Onderste broodje" />
+              <figcaption>Stel je persoonlijke burger samen</figcaption>
+            </figure>
+          </div>
+
+          <div class="kolom instelingen">
+            <h2>Configureer jouw burger</h2>
+            <input type="radio" name="broodType" id="standaard" value="s" /><label for="standaard">Standaard</label>
+            <input type="radio" name="broodType" id="volkoren" value="v" /><label for="volkoren">Volkoren</label>
+            <input type="radio" name="buntype" id="glutenvrij" value="g" /><label for="glutenvrij">Glutenvrij</label>
+
+            <div class="buttons"></div>
+            <a href="#" class="next">Voer je gegevens in &gt;</a>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="name">Naam:</label>
+          <input type="text" name="name" id="name" required="required" />
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" required="required" />
+          <label for="address">Adres:</label>
+          <textarea id="adrss" name="adres" required="required"></textarea>
+          <input type="submit" class="next" id="bestel" value="Bestel je burger!" />
+        </fieldset>
+
+        <fieldset>
+          <p> Bedankt voor uw bestelling! U ontvangt binnenkort een bevestigingsmail. </p>
+        </fieldset>
+      </form>
+    </div>
+
+    <aside>
+      <h2>Burgers die eerder zijn gemaakt</h2>
+      <ul></ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>
+      &copy; Morgane Van Velthoven | Graphics courtesy of
+      <a href="http://www.freepik.com/" target="_blank">Freepik</a>
+    </p>
+  </footer>
+</body>
+
 </html>
